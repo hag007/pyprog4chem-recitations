@@ -1,0 +1,13 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: rec0
+- file: rec1_1
+- file: rec1_2
+- file: rec2_1
+- file: rec2_2
+- file: rec3
+- file: rec7

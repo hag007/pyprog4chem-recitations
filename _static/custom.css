@@ -1,0 +1,43 @@
+@media (min-width: 992px) {
+  /* Remove secondary column entirely */
+  :root {
+    --pst-sidebar-secondary: 0px;
+    --sidebarW: var(--pst-sidebar-primary, 18rem);
+  }
+  .bd-sidebar-secondary { display: none !important; width:0 !important; }
+
+  /* Content uses viewport minus sidebar width (no gap possible) */
+  .bd-container, .bd-page-width, .bd-container__inner, .bd-main {
+    margin: 0 !important;
+    padding-right: 1rem !important;  /* breathing room near sidebar */
+    padding-left: 0 !important;
+  }
+
+
+  .bd-main .bd-content,
+  .bd-main .bd-content .bd-article-container {
+    max-width: 100% !important;
+  }
+  
+  
+  /* Allow full horizontal expansion */
+  .bd-main .bd-content,
+  .bd-main .bd-content .bd-article-container,
+  .bd-article,
+  .bd-article-container,
+  .bd-page-width {
+    max-width: 100vw !important;
+    width: 100% !important;
+  }
+
+  /* Remove right margins/padding that cause extra whitespace */
+  .bd-content,
+  .bd-article,
+  .bd-article-container {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  
+}
+
